@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# Powermad client
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Requirements
+
+powermad server must be running
+
+## How to build and run
+
+
+
+### Run without docker
 
 In the project directory, you can run:
 

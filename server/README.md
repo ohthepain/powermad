@@ -6,7 +6,7 @@ A back end for the Powermad MIDI sequencer/arpeggiator/MIDI sysex librarian.
 # Requirements 
 
 golang/gin
-MongoDB
+MongoDB and a mongo atlas db (I don't have instructions on how to set this up yet)
 docker running
 
 # Environment variables

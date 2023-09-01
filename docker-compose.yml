@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   powermad-server:
-    build:
-      # dockerfile: ./powermad-server/dockerfile
-      context: ./powermad-server
+    build: ./server
+      # dockerfile: ./Dockerfile
+      # dockerfile: ./server/dockerfile
+      # context: ./server
     container_name: powermad-server
     hostname: powermad-server
     image: powermad-server
@@ -16,7 +17,7 @@ services:
         condition: on-failure
 
   powermad-client:
-    build: client
+    build: ./client
     container_name: powermad-client
     image: powermad-client
       # context ./client
