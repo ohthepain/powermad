@@ -1,0 +1,67 @@
+
+.location {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.425rem;
+    padding-bottom: 0.425rem;
+    width: 4rem;
+    height: 0.5rem;
+    cursor: pointer;
+    /* gap: 1rem; */
+
+    /* justify-items: flex-start; */
+    /* justify-content: space-between; */
+    background-color: white;
+    align-items: center;
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    /* box-sizing: border-box; */
+    /* color: var(--text-primary-color); */
+
+    font-family: Helvetica;
+    font-size: smaller;
+}
+
+.location-disabled {
+    background-color: darkgray
+}
+
+.location .edit-button {
+    flex: 1;
+    cursor: pointer;
+    /* user-select: none; */
+}
+
+.location-item {
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+
+    /* position relative fixes height of dragger. idk why. dragger has position: absolute  */
+    position: relative;
+}
+
+.location-edit {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+}
+
+.location-edit .text {
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+
+    flex-basis: auto;
+    flex: 1;
+    gap: 0;
+    background-color: bisque;
+
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+}

@@ -1,0 +1,26 @@
+
+.midi-preferences {
+    padding: 2rem;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto; */
+}
+
+.midi-preferences h2 {
+    padding-top: 1rem;
+}
+
+.midi-preferences .device-setting-track {
+    /* grid-column: 2; */
+    background-color: pink;
+}
+
+.midi-preferences .device-setting-sync {
+    /* grid-column: 3; */
+    background-color: blanchedalmond;
+}
+
+.midi-preferences .device-setting-remote {
+    /* grid-column: 4; */
+    background-color: floralwhite;
+}

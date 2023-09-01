@@ -1,0 +1,55 @@
+
+.lane-controller {
+    display: flex;
+    padding: 0px;
+    /* background-color: white; */
+    grid-column: 1;
+}
+
+.lane-controller .item {
+    border: none;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.lane-controller .item:last-child {
+    margin-left: auto;
+}
+
+/* the lane itself goes under the notes */
+.step-lane {
+    display: flex;
+    padding: 1px;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*background-color: black;*/
+    border: none;
+    column-gap: 4px;
+    grid-column: 2;
+}
+
+.step-lane .spacer {
+    /* background-color: #828282; */
+    /*this should be 10 px to match the margins removed from parent*/
+    flex-basis: 2px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.step-lane-item {
+    display: flex;
+    background-color: darksalmon;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    justify-content: center;
+
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+
+    /* position relative fixes height of dragger, and by extension the rest of the page :). idk why. dragger has position: absolute  */
+    position: relative;
+}
+

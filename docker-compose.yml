@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  powermad-server:
+    build:
+      # dockerfile: ./powermad-server/dockerfile
+      context: ./powermad-server
+    container_name: powermad-server
+    hostname: powermad-server
+    image: powermad-server
+    # image: public.ecr.aws/k0r5u8i7ohthepain/powermad-server:latest
+    ports:
+      - 8080:8080
+    deploy:
+      restart_policy:
+        condition: on-failure
+
+  powermad-client:
+    build: client
+    container_name: powermad-client
+    image: powermad-client
+      # context ./client
+    ports:
+      # hosting port:container port
+      - 3000:3000

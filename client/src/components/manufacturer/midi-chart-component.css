@@ -1,0 +1,36 @@
+
+.midiChart {
+    background-color: #5a5a5a;
+}
+
+.midiChart button {
+    border: none;
+    margin-left: 10px;
+}
+
+.midiChart h1 {
+    background-color: #6dd7ff;
+}
+
+.midiCcList {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    background-color: gold;
+}
+
+.midiCcList table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.midiCcList th {
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: lightcyan;
+}
+
+.midiCcList tr {
+    height: 14px;
+}
+

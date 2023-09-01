@@ -1,0 +1,103 @@
+
+.randomize-panel {
+    grid-column: 2;
+    width: 100%;
+}
+
+.randomizer-panel-name {
+    width: 100%;
+    /* background-color: bisque; */
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    /* font-weight: bold; */
+}
+
+.randomize-bar {
+    align-items: center;
+}
+
+.randomize-settings-panel {
+    display: flex;
+    height: 100%;
+    width: 12rem;
+    /* rotate: 45deg; */
+    flex-direction: column;
+    background-color:white;
+}
+
+.randomize-inner-panel {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    /* grid-template-rows: 1fr; */
+    gap: 2px;
+}
+
+.grid {
+    display: grid;
+    /* rotate: 45deg; */
+}
+
+.grid-overlay {
+    grid-area: 1 / 1;
+}
+
+.superslider { 
+    /* margin: auto; */
+    -webkit-appearance: slider-vertical;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 0; /* iOS */
+    /* accent-color: #F55050; */
+}
+
+.supervalue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+.randomize-panel ::-webkit-slider-runnable-track {
+    background:white;
+}
+
+.strength-slider {
+    width: 1rem;
+    height: 80%;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ * 2. Shadow is negative the full width of the input and has a spread 
+ *    of the width of the input.
+ */
+ .randomize-panel ::-webkit-slider-thumb {
+    width: 0;
+    height: 0;
+    box-shadow: 0 200px 0 200px rgba(30, 143, 255, 0.532), 0 0px 0 200px rgba(30, 143, 255, 0.33);
+}
+
+.strength-slider { 
+    /* margin: auto; */
+    -webkit-appearance: slider-horizontal;
+    position: relative;
+    overflow: hidden;
+    height: 1.1rem;
+    width: 100%;
+    border-radius: 0; /* iOS */
+    /* accent-color: #F55050; */
+}
+
+.randomize-panel .on {
+    /* rotate: 45deg; */
+    background-color: aqua;
+}
+
+.randomize-panel .off {
+    /* rotate: -45deg; */
+    background-color: white;
+}

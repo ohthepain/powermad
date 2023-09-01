@@ -1,0 +1,48 @@
+
+.panel-button {
+    display: flex;
+    flex-direction: row;
+    padding: 0.425rem;
+    width: 4rem;
+    height: 0.5rem;
+    cursor: pointer;
+    /* gap: 1rem; */
+
+    /* justify-items: flex-start; */
+    justify-content: space-between;
+    /* background-color: aqua; */
+    align-items: center;
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    /* box-sizing: border-box; */
+    /* color: var(--text-primary-color); */
+
+    font-family: Helvetica;
+    font-size: smaller;
+}
+
+.panel-button-disabled {
+    background-color: darkgray;
+}
+
+.panel-button-selected {
+    background-color: aqua;
+}
+
+.panel-button-unselected {
+    background-color: orange;
+}
+
+.panel-button .p {
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+
+.panel-button-item {
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}

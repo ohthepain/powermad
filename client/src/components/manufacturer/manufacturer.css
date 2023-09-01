@@ -1,0 +1,63 @@
+
+.selectDevice {
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.manufacturerBar {
+    background-color: gold;
+}
+
+.deviceArea {
+    display: flex;
+    /*flex-direction: row;*/
+    /*justify-content: flex-start;*/
+    background-color: lightskyblue;
+    width: 100%;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    column-gap: 4px;
+}
+
+.deviceListColumn {
+    background-color: wheat;
+    /*flex-basis: 50%;*/
+    /*flex: 1;*/
+    text-align: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.device-button {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.4rem;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    /*box-shadow: lightgrey;*/
+}
+
+.device-button:hover {
+    scale: 102%;
+}
+
+.device-image {
+    max-width: 100%;
+    height: 80%;
+    /*max-width: 300px;*/
+    flex-shrink: 5;
+}
+
+.deviceInfoColumn {
+    background-color: slateblue;
+    text-align: center;
+}
+
+.deviceInfo {
+    background-color: lemonchiffon;
+    width: 100%;
+    height: 300px;
+}
