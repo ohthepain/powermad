@@ -1,13 +1,12 @@
 
 # powermad
 
-Web-based MIDI sequencer/arpeggiator/MIDI sysex librarian. 
+Web-based MIDI sequencer/arpeggiator/MIDI sysex librarian. It lets you 
+- Control your hardware MIDI synths from a web browser.
+- Save sequences to the cloud and share them with others!
 
-Control your hardware MIDI synths from a web browser.
-
-Save sequences to the cloud and share them with others!
-
-Currently supports only Korg Minilogue XD.
+[!NOTE]
+> Currently supports only Korg Minilogue XD.
 
 # Requirements 
 
@@ -15,10 +14,22 @@ Client must run in a browser that supports MIDI, such as Opera or Chrome. Safari
 
 See README in client/ and server/ for more details.
 
+# Hosting
+
+Client and server containers are hosted on AWS ECR and ECS.
+
 ## How to build and run
+
+> docker compose up
 
 see makefile for docker commands
 
-To run client or server separately ...
-see client/
-see server/
+The `client/` and `server/` folders have makefiles for working locally.
+
+## How to release
+
+To build containers and push them to ECR:
+
+> docker compose build
+> docker compose push
+

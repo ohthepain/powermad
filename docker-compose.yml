@@ -3,13 +3,9 @@ version: '3.8'
 services:
   powermad-server:
     build: ./server
-      # dockerfile: ./Dockerfile
-      # dockerfile: ./server/dockerfile
-      # context: ./server
     container_name: powermad-server
     hostname: powermad-server
-    image: powermad-server
-    # image: public.ecr.aws/k0r5u8i7ohthepain/powermad-server:latest
+    image: public.ecr.aws/k0r5u8i7/powermad-server:latest
     ports:
       - 8080:8080
     deploy:
@@ -19,8 +15,9 @@ services:
   powermad-client:
     build: ./client
     container_name: powermad-client
-    image: powermad-client
-      # context ./client
+    image: public.ecr.aws/k0r5u8i7/powermad-client:latest
     ports:
-      # hosting port:container port
       - 3000:3000
+    # TODO: hot reload
+    # volumes:
+      # - ./src/:/app/src/
